@@ -1,5 +1,5 @@
-from DiGraph import DiGraph
-from GraphAlgo import GraphAlgo
+from src.DiGraph import DiGraph
+from src.GraphAlgo import GraphAlgo
 
 
 def check():
@@ -8,7 +8,7 @@ def check():
     {0: 0: |edges out| 1 |edges in| 1, 1: 1: |edges out| 3 |edges in| 1, 2: 2: |edges out| 1 |edges in| 1, 3: 3: |edges out| 0 |edges in| 2}
     {0: 1}
     {0: 1.1, 2: 1.3, 3: 10}
-    (3.4, [0, 1, 2, 3])
+    ##(3.4, [0, 1, 2, 3])
     [[0, 1], [2], [3]]
     (2.8, [0, 1, 3])
     (inf, [])
@@ -20,8 +20,8 @@ def check():
     [[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13], [14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47]]
     """
     check0()
-  #  check1()
-   # check2()
+    check1()
+    check2()
 
 
 def check0():
@@ -43,9 +43,9 @@ def check0():
     print(g.get_all_v())  # prints a dict with all the graph's vertices.
     print(g.all_in_edges_of_node(1))
     print(g.all_out_edges_of_node(1))
-    g_algo = GraphAlgo(g)
-    print(g_algo.shortest_path(0, 3))
-    g_algo.plot_graph()
+    # g_algo = GraphAlgo()
+    # print(g_algo.shortest_path(0, 3))
+    # g_algo.plot_graph()
 
 
 def check1():

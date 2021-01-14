@@ -54,7 +54,12 @@
       <change beforePath="$PROJECT_DIR$/../Ex2/src/gameClient/Ex2_Client.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Ex2/src/gameClient/MyFrame.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Ex2/src/gameClient/SimpleGameClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Ex3_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ex3_main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GraphAlgo.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/GraphAlgo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/NodeData.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/NodeData.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TestDiGraph.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/TestDiGraph.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +75,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="JupyterTrust" id="9e5db7bc-e99e-4ccb-98c1-9ddb2e8b4d81" />
   <component name="ProjectId" id="1mnVjECSTylOse8gpYm4V0zqO7t" />
@@ -85,7 +90,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="coverage" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.Ex3_main">
     <configuration name="Ex3_main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Ex3" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -108,9 +113,25 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Unittests in TestDiGraph.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="Ex3" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/src/TestDiGraph.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.Ex3_main" />
+        <item itemvalue="Python tests.Unittests in TestDiGraph.py" />
       </list>
     </recent_temporary>
   </component>
@@ -125,7 +146,8 @@
       <workItem from="1610129475773" duration="2016000" />
       <workItem from="1610187855554" duration="2564000" />
       <workItem from="1610282565535" duration="8513000" />
-      <workItem from="1610455297610" duration="24356000" />
+      <workItem from="1610455297610" duration="27909000" />
+      <workItem from="1610616784255" duration="4683000" />
     </task>
     <servers />
   </component>
@@ -153,22 +175,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="550" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1610569383599" />
-    <state width="1493" height="265" key="GridCell.Tab.0.bottom" timestamp="1610573506392">
+    <state width="1493" height="186" key="GridCell.Tab.0.bottom" timestamp="1610625156552">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="265" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1610573506392" />
-    <state width="1493" height="265" key="GridCell.Tab.0.center" timestamp="1610573506392">
+    <state width="1493" height="186" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1610625156552" />
+    <state width="1493" height="186" key="GridCell.Tab.0.center" timestamp="1610625156552">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="265" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1610573506392" />
-    <state width="1493" height="265" key="GridCell.Tab.0.left" timestamp="1610573506392">
+    <state width="1493" height="186" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1610625156552" />
+    <state width="1493" height="186" key="GridCell.Tab.0.left" timestamp="1610625156552">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="265" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1610573506392" />
-    <state width="1493" height="265" key="GridCell.Tab.0.right" timestamp="1610573506392">
+    <state width="1493" height="186" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1610625156552" />
+    <state width="1493" height="186" key="GridCell.Tab.0.right" timestamp="1610625156552">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="265" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1610573506392" />
+    <state width="1493" height="186" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1610625156552" />
     <state x="279" y="58" key="SettingsEditor" timestamp="1610570121508">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -179,6 +201,7 @@
     <state x="398" y="219" key="com.jetbrains.python.documentation.PythonDocumentationEntryEditor/0.0.1536.824@0.0.1536.824" timestamp="1610570010367" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Ex3$Ex3_main.coverage" NAME="Ex3_main Coverage Results" MODIFIED="1610573418919" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/Ex3$Ex3_main.coverage" NAME="Ex3_main Coverage Results" MODIFIED="1610624940080" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/Ex3$Unittests_in_TestDiGraph_py.coverage" NAME="Unittests in TestDiGraph.py Coverage Results" MODIFIED="1610624469928" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
   </component>
 </project>

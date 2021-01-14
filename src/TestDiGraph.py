@@ -1,4 +1,7 @@
 import unittest
+from unittest import TestCase
+from src.DiGraph import DiGraph
+from src.NodeData import NodeData
 
 
 class MyTestCase(unittest.TestCase):
