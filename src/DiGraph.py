@@ -82,11 +82,11 @@ class DiGraph(GraphInterface):
         if node_id not in self.Vertices:
             return False
         else:
-            for nib_out in self.all_out_edges_of_node(node_id):
+            for nib_out in self.all_out_edges_of_node(node_id).copy():
                 # Sends all the edges going out a given node_id to remove func
                 self.remove_edge(node_id, nib_out)
                 self.remove_edge(nib_out, node_id)
-            for nib_in in self.all_in_edges_of_node(node_id):
+            for nib_in in self.all_in_edges_of_node(node_id).copy():
                 # Sends all the edges going in a given node_id to remove func
                 self.remove_edge(node_id, nib_out)
                 self.remove_edge(nib_out, node_id)

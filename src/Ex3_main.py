@@ -43,9 +43,9 @@ def check0():
     print(g.get_all_v())  # prints a dict with all the graph's vertices.
     print(g.all_in_edges_of_node(1))
     print(g.all_out_edges_of_node(1))
-    # g_algo = GraphAlgo()
-    # print(g_algo.shortest_path(0, 3))
-    # g_algo.plot_graph()
+    g_algo = GraphAlgo(g)
+    print(g_algo.shortest_path(0, 3))
+    g_algo.plot_graph()
 
 
 def check1():

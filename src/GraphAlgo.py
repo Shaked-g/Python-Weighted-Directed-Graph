@@ -11,8 +11,13 @@ from src.GraphAlgoInterface import GraphAlgoInterface
 
 
 class GraphAlgo(GraphAlgoInterface):
-    def __init__(self):
-        self.graph = DiGraph()
+
+    def __init__(self, graph=None):
+        # initialize a given graph into GraphAlgo if given
+        if graph is None:
+            self.graph = DiGraph()
+        else:
+            self.graph = graph
 
     def get_graph(self) -> GraphInterface:
         """
@@ -59,7 +64,7 @@ class GraphAlgo(GraphAlgoInterface):
                 d = {"Nodes": [], "Edges": []}
                 for src in self.graph.Ni_out.keys():
                     for dst, w in self.graph.all_out_edges_of_node(src).items():
-                        d["Edges"].append({"src": src, "dest": dst, "w": w })
+                        d["Edges"].append({"src": src, "dest": dst, "w": w})
 
                 for node in self.graph.Vertices.values():
                     if node.pos is not None:
@@ -131,9 +136,12 @@ class GraphAlgo(GraphAlgoInterface):
         Notes:
         If the graph is None or id1 is not in the graph, the function should return an empty list []
         """
-        bfs_in = self.bfs(id1, False)
-        bfs_out = self.bfs(id1, True)
-        return list(set(bfs_in) & set(bfs_out))
+        if id1 not in self.graph.Vertices:
+            return []
+        else:
+            bfs_in = self.bfs(id1, False)
+            bfs_out = self.bfs(id1, True)
+            return list(set(bfs_in) & set(bfs_out))
 
     def connected_components(self) -> List[list]:
         """
@@ -144,6 +152,8 @@ class GraphAlgo(GraphAlgoInterface):
         If the graph is None the function should return an empty list []
         """
         ans = []
+        if self is None:
+            return ans
         t = list(self.graph.Vertices.keys())
         while t:
             scc = self.connected_component(t[0])
@@ -152,14 +162,14 @@ class GraphAlgo(GraphAlgoInterface):
             ans.append(scc)
         return ans
 
-    def bfs(self, s: int, flag: bool) -> list:
+    def bfs(self, s: int, parm: bool) -> list:
         visited = {i: False for i in self.graph.Vertices.keys()}
         visited[s] = True
         queue = [s]
         t = [s]
         while queue:
             current = queue.pop()
-            if flag:
+            if parm:
                 p = self.graph.all_out_edges_of_node(current).keys()
             else:
                 p = self.graph.all_in_edges_of_node(current).keys()
@@ -178,6 +188,7 @@ class GraphAlgo(GraphAlgoInterface):
         Otherwise, they will be placed in a random but elegant manner.
         @return: None
         """
+
         g = self.get_graph()
         for key, node in g.get_all_v().items():
             for k, w in g.all_out_edges_of_node(key).items():
@@ -187,7 +198,6 @@ class GraphAlgo(GraphAlgoInterface):
                 y1 = node.pos[1]
                 x2 = g.Vertices[k].pos[0]
                 y2 = g.Vertices[k].pos[1]
-                # print(x1,x2,y1,y2)
                 dir_x = (x1 - x2) / math.sqrt((x1 - x2) ** 2 + (y1 - y2) ** 2)
                 dir_y = (y1 - y2) / math.sqrt((x1 - x2) ** 2 + (y1 - y2) ** 2)
                 x1 = dir_x * (-r) + x1
@@ -196,12 +206,15 @@ class GraphAlgo(GraphAlgoInterface):
                 y2 = dir_y * r + y2
 
                 plt.arrow(x1, y1, (x2 - x1), (y2 - y1),
-                          length_includes_head=True, width=0.000003, head_width=0.00015)
+                          length_includes_head=True, width=0.000004, head_width=0.00015, head_length=1.5 * 0.00028)
 
         for node in g.get_all_v().values():
             if node.pos is None:
                 node.pos = (random.uniform(0, 5), random.uniform(0, 5), 0)
-                # print(node.position)
-            plt.plot(node.pos[0], node.pos[1], 'or', markersize=9, data="d")
-            # plt.text(node.position[0], node.position[1], str(node.key))
+            # red dot plotting
+            plt.plot(node.pos[0], node.pos[1], 'or', markersize=8, data="d")
+
+        #  plt.annotate( str(node.key), xy=(node.pos[0], node.pos[1]),
+        #            ha='right',va='top' )
+
         plt.show()
